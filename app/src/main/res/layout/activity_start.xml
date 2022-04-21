@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ui.StartActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="55dp"
+        android:src="@drawable/word_picture_start_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/frame_level1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#5980C1F4"
+        android:elevation="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+            android:id="@+id/scroll_level1"
+            android:layout_width="wrap_content"
+            android:layout_height="333dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="88dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/level1_card"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    android:elevation="15dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/start_level1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#C475FF7B"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:text="Level 1"
+                            android:textColor="#000000"
+                            android:textSize="40sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3">
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:src="@drawable/level4" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/aladin"
+                                android:gravity="center"
+                                android:rotation="270"
+                                android:text="With 4 pictures."
+                                android:textColor="#000"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/level2_card"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:elevation="15dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/start_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/disable_level"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:text="Level 2"
+                            android:textColor="#000000"
+                            android:textSize="40sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3">
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:src="@drawable/level2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/aladin"
+                                android:gravity="center"
+                                android:rotation="270"
+                                android:text="With 3 pictures."
+                                android:textColor="#000"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/level3_card"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:elevation="15dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/start_level3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#AEFFADAD"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:text="Level 3"
+                            android:textColor="#000000"
+                            android:textSize="40sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3">
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:src="@drawable/level3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/aladin"
+                                android:gravity="center"
+                                android:rotation="270"
+                                android:text="With 2 pictures."
+                                android:textColor="#000"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/level4_card"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:elevation="15dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/start_level4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#AEFFADAD"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:text="Level 4"
+                            android:textColor="#000000"
+                            android:textSize="40sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3">
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:src="@drawable/level1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/aladin"
+                                android:gravity="center"
+                                android:rotation="270"
+                                android:text="With 1 picture."
+                                android:textColor="#000"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
