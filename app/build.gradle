@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "uz.isytem.a4pics1word"
+        applicationId "uz.sanjar.a4pics1word"
         minSdk 21
         targetSdk 32
         versionCode 1
